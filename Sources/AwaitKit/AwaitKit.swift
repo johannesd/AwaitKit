@@ -40,7 +40,11 @@ public struct Queue {
  - returns: A new promise that is resolved when the provided closure returned.
  */
 public func async<T>(_ body: @escaping () throws -> T) -> Promise<T> {
-  return Queue.async.async(.promise, execute: body)
+    if #available(iOS 10.0, *) {
+        return Promise<T>.async(execute: body)
+    } else {
+        return Queue.async.async(.promise, execute: body)
+    }
 }
 
 /**
@@ -48,7 +52,11 @@ public func async<T>(_ body: @escaping () throws -> T) -> Promise<T> {
  - parameter body: The closure that is executed on a concurrent queue.
  */
 public func async(_ body: @escaping () throws -> Void) {
-  Queue.async.ak.async(body)
+    if #available(iOS 10.0, *) {
+        _ = Promise<Void>.async(execute: body)
+    } else {
+        Queue.async.ak.async(body)
+    }
 }
 
 /**

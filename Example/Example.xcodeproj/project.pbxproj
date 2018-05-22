@@ -125,6 +125,7 @@
 				TargetAttributes = {
 					FE41FCBA1F46D7AD00CD2271 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = BHX8R35CB6;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
@@ -361,6 +362,7 @@
 			baseConfigurationReference = F907B421AB6D4A92837D55A0 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BHX8R35CB6;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yannickloriot.Example;
@@ -374,6 +376,7 @@
 			baseConfigurationReference = 59CD49574253111855826BD9 /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BHX8R35CB6;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yannickloriot.Example;
